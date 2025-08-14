@@ -1,0 +1,45 @@
+.lang-switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px; /* Abstand zu Contact */
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #ffcc00;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.dropbtn:hover {
+  background-color: rgba(255, 204, 0, 0.15);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 120px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: #bbb;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.85rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.lang-switch:hover .dropdown-content {
+  display: block;
+}
