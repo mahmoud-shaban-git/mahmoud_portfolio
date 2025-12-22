@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Mahmoud Shaban – Projekt hinzufügen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="ftco-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-modern.css">
+
+    <style>
+        .form-section {
+            background: #0f172a;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .form-label {
+            color: #94a3b8;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-control-custom {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control-custom:focus {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        .section-title-form {
+            color: #fff;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .btn-add {
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-add:hover {
+            transform: translateY(-2px);
+            background: #2563eb;
+        }
+
+        .btn-secondary-custom {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tag-item {
+            background: #1e293b;
+            color: #3b82f6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tag-item span {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .preview-grid {
+            border: 2px dashed rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .preview-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .file-input-wrapper {
+            margin-bottom: 25px;
+        }
+
+        .upload-hint {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+        }
+
+        .lang-link {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .lang-link:hover,
+        .lang-link.active {
+            color: #3b82f6;
+        }
+
+        .lang-divider {
+            color: #475569;
+        }
+    </style>
+</head>
+
+<body style="background: #020617;">
+
+    <!-- HEADER -->
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-modern" href="index-de.html">
+                    <div class="logo-box">
+                        <span class="logo-title">Mahmoud Shaban</span>
+                        <div class="logo-line-box">
+                            <span class="logo-line-del"></span>
+                            <span class="logo-diamond">♦</span>
+                            <span class="logo-line-del"></span>
+                        </div>
+                        <span class="logo-subtitle">Backend Developer</span>
+                    </div>
+                </a>
+
+                <div class="ml-auto d-flex align-items-center">
+                    <div class="lang-toggle mr-4">
+                        <a href="add-project.html" class="lang-link">EN</a>
+                        <span class="lang-divider">/</span>
+                        <a href="add-project-de.html" class="lang-link active">DE</a>
+                    </div>
+                    <a href="index-de.html" class="btn btn-sm btn-outline-white d-none d-md-inline-block">Zurück zur
+                        Website</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="mb-5 text-center text-white">Neues Projekt hinzufügen</h2>
+
+                    <form id="addProjectForm">
+                        <!-- Basic Info -->
+                        <div class="form-section">
+                            <h3 class="section-title-form">Basis Informationen</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Projekt-Titel (Englisch)</label>
+                                    <input type="text" id="title_en" class="form-control-custom" required
+                                        placeholder="z.B. My Awesome Project">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Projekt-Titel (Deutsch)</label>
+                                    <input type="text" id="title_de" class="form-control-custom"
+                                        placeholder="z.B. Mein tolles Projekt">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Kurzer Untertitel (Englisch)</label>
+                                    <input type="text" id="subtitle_en" class="form-control-custom" required
+                                        placeholder="z.B. Web Development">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Kurzer Untertitel (Deutsch)</label>
+                                    <input type="text" id="subtitle_de" class="form-control-custom"
+                                        placeholder="z.B. Webentwicklung">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content (EN) -->
+                        <div class="form-section">
+                            <h3 class="section-title-form">Projekt-Inhalt (Englisch)</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Problem (Englisch)</label>
+                                    <input type="text" id="header_problem_en" class="form-control-custom"
+                                        placeholder="z.B. The Problem">
+                                    <label class="form-label">Das Problem Inhalt (Englisch)</label>
+                                    <textarea id="problem_en" class="form-control-custom" rows="3" required
+                                        placeholder="What problem were you solving?"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Lösung (Englisch)</label>
+                                    <input type="text" id="header_solution_en" class="form-control-custom"
+                                        placeholder="z.B. The Solution">
+                                    <label class="form-label">Die Lösung Inhalt (Englisch)</label>
+                                    <textarea id="solution_en" class="form-control-custom" rows="3" required
+                                        placeholder="How did you solve it?"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Technologien (Englisch)</label>
+                                    <input type="text" id="header_tech_en" class="form-control-custom"
+                                        placeholder="z.B. Technologies">
+                                    <label class="form-label">Technologien Inhalt (Englisch)</label>
+                                    <textarea id="tech_desc_en" class="form-control-custom" rows="3" required
+                                        placeholder="E.g. Java for backend, React for frontend..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content (DE) -->
+                        <div class="form-section">
+                            <h3 class="section-title-form">Projekt-Inhalt (Deutsch)</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Problem (Deutsch)</label>
+                                    <input type="text" id="header_problem_de" class="form-control-custom"
+                                        placeholder="z.B. Das Problem">
+                                    <label class="form-label">Das Problem Inhalt (Deutsch)</label>
+                                    <textarea id="problem_de" class="form-control-custom" rows="3"
+                                        placeholder="Welches Problem haben Sie gelöst?"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Lösung (Deutsch)</label>
+                                    <input type="text" id="header_solution_de" class="form-control-custom"
+                                        placeholder="z.B. Die Lösung">
+                                    <label class="form-label">Die Lösung Inhalt (Deutsch)</label>
+                                    <textarea id="solution_de" class="form-control-custom" rows="3"
+                                        placeholder="Wie haben Sie es gelöst?"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Überschrift für Technologien (Deutsch)</label>
+                                    <input type="text" id="header_tech_de" class="form-control-custom"
+                                        placeholder="z.B. Technologien">
+                                    <label class="form-label">Verwendete Technologien Inhalt (Deutsch)</label>
+                                    <textarea id="tech_desc_de" class="form-control-custom" rows="3"
+                                        placeholder="Z.B. Java für das Backend, React für das Frontend..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Media -->
+                        <div class="form-section">
+                            <h3 class="section-title-form">Medien & Links</h3>
+
+                            <div class="file-input-wrapper">
+                                <label class="form-label">Hauptbild</label>
+                                <input type="file" id="main_image_file" class="form-control-custom" accept="image/*">
+                                <p class="upload-hint">ODER geben Sie unten eine URL ein</p>
+                                <input type="text" id="main_image" class="form-control-custom"
+                                    placeholder="https://example.com/image.jpg">
+                                <div id="main_preview" class="preview-grid" style="display: none;"></div>
+                            </div>
+
+                            <div class="file-input-wrapper">
+                                <label class="form-label">Detailfotos</label>
+                                <input type="file" id="detail_images_files" class="form-control-custom" accept="image/*"
+                                    multiple>
+                                <p class="upload-hint">ODER geben Sie URLs (eine pro Zeile) unten ein</p>
+                                <textarea id="detail_images" class="form-control-custom" rows="3"
+                                    placeholder="https://example.com/img1.jpg\nhttps://example.com/img2.jpg"></textarea>
+                                <div id="details_preview" class="preview-grid" style="display: none;"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">GitHub URL</label>
+                                    <input type="url" id="github_url" class="form-control-custom"
+                                        placeholder="https://github.com/...">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Demo URL</label>
+                                    <input type="url" id="demo_url" class="form-control-custom"
+                                        placeholder="https://...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="form-section">
+                            <h3 class="section-title-form">Technologien / Tags</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Tags (Englisch) - Trennung durch Komma</label>
+                                    <input type="text" id="tags_en" class="form-control-custom"
+                                        placeholder="Java, Spring Boot, React">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Tags (Deutsch) - Trennung durch Komma</label>
+                                    <input type="text" id="tags_de" class="form-control-custom"
+                                        placeholder="Java, Spring Boot, React">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mb-5">
+                            <button type="submit" class="btn-add">Projekt zum Portfolio hinzufügen</button>
+                            <button type="button" id="copyAiBtn" class="btn-secondary-custom ml-3"
+                                style="background: #8b5cf6;">Daten für KI kopieren</button>
+                            <button type="button" id="exportBtn" class="btn-secondary-custom ml-3"
+                                style="background: #10b981;">JSON-Datei herunterladen</button>
+                            <button type="button" id="clearBtn" class="btn-secondary-custom ml-3">Alle Projekte
+                                löschen</button>
+                        </div>
+                    </form>
+
+                    <div id="statusMessage" class="text-center text-success mb-5" style="display: none;">
+                        Projekt erfolgreich hinzugefügt! Es erscheint nun auf der Index- und Projektseite.
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title-form">Projekte verwalten</h3>
+                        <div id="projectsList" class="row">
+                            <!-- Hier werden die Projekte aufgelistet -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Minimal) -->
+    <footer class="site-footer" style="padding: 4rem 0;">
+        <div class="container text-center">
+            <p><a href="index-de.html" class="btn btn-outline-white">Zurück zur Startseite</a></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/projects-manager.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            async function updateProjectsList() {
+                const projects = await getCustomProjects();
+                const list = $('#projectsList');
+                list.empty();
+
+                if (projects.length === 0) {
+                    list.append('<div class="col-12 text-center text-muted">Noch keine benutzerdefinierten Projekte hinzugefügt.</div>');
+                    return;
+                }
+
+                projects.forEach(p => {
+                    list.append(`
+                        <div class="col-md-4 mb-4">
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                                <img src="${p.main_image}" style="width: 100%; height: 120px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+                                <h4 class="text-white" style="font-size: 16px;">${p.title_de || p.title_en}</h4>
+                                <button class="btn btn-sm btn-danger mt-2 delete-proj" data-id="${p.id}">Löschen</button>
+                            </div>
+                        </div>
+                    `);
+                });
+            }
+
+            updateProjectsList();
+
+            let mainImageBase64 = '';
+            let detailImagesBase64 = [];
+
+            // Helper to convert file to Base64
+            const toBase64 = file => new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = error => reject(error);
+            });
+
+            // Preview Main Image
+            $('#main_image_file').on('change', async function () {
+                const file = this.files[0];
+                if (file) {
+                    mainImageBase64 = await toBase64(file);
+                    $('#main_preview').html(`<img src="${mainImageBase64}" class="preview-img">`).show();
+                }
+            });
+
+            // Preview Detail Images
+            $('#detail_images_files').on('change', async function () {
+                const files = Array.from(this.files);
+                detailImagesBase64 = [];
+                $('#details_preview').empty().show();
+                for (const file of files) {
+                    const b64 = await toBase64(file);
+                    detailImagesBase64.push(b64);
+                    $('#details_preview').append(`<img src="${b64}" class="preview-img">`);
+                }
+            });
+
+            $('#addProjectForm').on('submit', async function (e) {
+                e.preventDefault();
+
+                const mainImg = mainImageBase64 || $('#main_image').val();
+                if (!mainImg) {
+                    alert('Bitte laden Sie ein Hauptbild hoch oder geben Sie eine URL an.');
+                    return;
+                }
+
+                // Combine uploaded and URL files
+                let allDetailImages = [...detailImagesBase64];
+                const detailUrls = $('#detail_images').val().split('\n').filter(url => url.trim() !== '');
+                allDetailImages = allDetailImages.concat(detailUrls);
+
+                const project = {
+                    id: 'custom-' + Date.now(),
+                    title_en: $('#title_en').val(),
+                    title_de: $('#title_de').val(),
+                    subtitle_en: $('#subtitle_en').val(),
+                    subtitle_de: $('#subtitle_de').val(),
+                    header_problem_en: $('#header_problem_en').val(),
+                    header_problem_de: $('#header_problem_de').val(),
+                    problem_en: $('#problem_en').val(),
+                    problem_de: $('#problem_de').val(),
+                    header_solution_en: $('#header_solution_en').val(),
+                    header_solution_de: $('#header_solution_de').val(),
+                    solution_en: $('#solution_en').val(),
+                    solution_de: $('#solution_de').val(),
+                    header_tech_en: $('#header_tech_en').val(),
+                    header_tech_de: $('#header_tech_de').val(),
+                    tech_desc_en: $('#tech_desc_en').val(),
+                    tech_desc_de: $('#tech_desc_de').val(),
+                    main_image: mainImg,
+                    detail_images: allDetailImages,
+                    tags_en: $('#tags_en').val().split(',').map(t => t.trim()).filter(t => t !== ''),
+                    tags_de: $('#tags_de').val().split(',').map(t => t.trim()).filter(t => t !== ''),
+                    github_url: $('#github_url').val(),
+                    demo_url: $('#demo_url').val()
+                };
+
+                saveCustomProject(project).then(() => {
+                    $('#statusMessage').fadeIn().delay(3000).fadeOut();
+                    this.reset();
+                    $('#main_preview, #details_preview').hide().empty();
+                    mainImageBase64 = '';
+                    detailImagesBase64 = [];
+                    updateProjectsList();
+
+                    // Jump to list
+                    $('html, body').animate({
+                        scrollTop: $("#projectsList").offset().top - 100
+                    }, 500);
+                });
+            });
+
+            $(document).on('click', '.delete-proj', async function () {
+                const id = $(this).data('id');
+                if (confirm('Möchten Sie dieses Projekt wirklich löschen?')) {
+                    await deleteCustomProject(id);
+                    updateProjectsList();
+                }
+            });
+
+            $('#clearBtn').on('click', function () {
+                if (confirm('Sind Sie sicher, dass Sie ALLE benutzerdefinierten Projekte löschen möchten?')) {
+                    localStorage.removeItem(PROJECTS_KEY);
+                    updateProjectsList();
+                }
+            });
+
+            $('#exportBtn').on('click', async function () {
+                const projects = await getCustomProjects();
+                if (projects.length === 0) {
+                    alert("Keine Projekte zum Exportieren vorhanden.");
+                    return;
+                }
+
+                const json = JSON.stringify(projects, null, 2);
+                const blob = new Blob([json], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+
+                const downloadAnchorNode = document.createElement('a');
+                downloadAnchorNode.setAttribute("href", url);
+                downloadAnchorNode.setAttribute("download", "projects-data.json");
+                document.body.appendChild(downloadAnchorNode);
+                downloadAnchorNode.click();
+                downloadAnchorNode.remove();
+
+                // Speicher wieder freigeben
+                setTimeout(() => URL.revokeObjectURL(url), 100);
+            });
+
+            $('#copyAiBtn').on('click', async function () {
+                const projects = await getCustomProjects();
+                const json = JSON.stringify(projects, null, 2);
+                navigator.clipboard.writeText(json).then(() => {
+                    alert("JSON in Zwischenablage kopiert! Füge sie im Chat ein, damit ich sie speichern kann.");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

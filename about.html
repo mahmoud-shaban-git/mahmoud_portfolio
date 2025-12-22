@@ -44,7 +44,14 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
   <!-- Theme Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-modern.css">
 
 </head>
 
@@ -53,7 +60,18 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <header role="banner">
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">Mahmoud Shaban</a>
+        <a class="navbar-brand logo-modern" href="index.html">
+
+          <div class="logo-box">
+            <span class="logo-title">Mahmoud Shaban</span>
+            <div class="logo-line-box">
+              <span class="logo-line-del"></span>
+              <span class="logo-diamond">♦</span>
+              <span class="logo-line-del"></span>
+            </div>
+            <span class="logo-subtitle">Backend Developer</span>
+          </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,14 +107,12 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
       </div>
 
 
-                  <!-- Sprachumschalter Dropdown -->
-          <div class="dropdown lang-switch">
-            <button class="dropbtn">Language</button>
-            <div class="dropdown-content">
-              <a href="about.html">English (EN)</a>
-              <a href="about-de.html">Deutsch (DE)</a>
-            </div>
-          </div>
+      <!-- New Modern Language Switcher -->
+      <div class="lang-toggle">
+        <a href="about.html" class="lang-link active">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="about-de.html" class="lang-link">DE</a>
+      </div>
     </nav>
   </header>
   <!-- END header -->
@@ -138,7 +154,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
       </div>
     </div>
   </div>
-  
+
 
   <div class="section bg-light block-11">
     <div class="container">
@@ -189,7 +205,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
           <div class="block-33 h-100">
             <div class="text">
               <blockquote>
-                <p>&rdquo; Whether it's building APIs, optimizing performance, or collaborating with designers and developers, I give every task my full attention and energy. &ldquo;</p>
+                <p>&rdquo; Whether it's building APIs, optimizing performance, or collaborating with designers and
+                  developers, I give every task my full attention and energy. &ldquo;</p>
               </blockquote>
             </div>
           </div>
@@ -205,9 +222,11 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-lg-7">
-          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Looking for a backend developer?
+          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Looking for a backend
+            developer?
           </h3>
-          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">I’d love to hear from you and see how we can work together.</p>
+          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">I’d love to hear from you and see how we
+            can work together.</p>
 
           <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact.html"
               class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
@@ -217,7 +236,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     </div>
   </div>
 
- <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-4 mb-5">
@@ -226,11 +245,14 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             Clean code. Continuous improvement. Real results.</p>
           <ul class="list-unstyled footer-link d-flex footer-social">
             <ul class="list-unstyled footer-link d-flex footer-social">
-      
-            <li><a href="https://facebook.com/profile.php?id=100037561622113"  class="p-2"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a></li>
-          </ul>
+
+              <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span
+                    class="fa fa-facebook"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span
+                    class="fa fa-linkedin"></span></a></li>
+              <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a>
+              </li>
+            </ul>
           </ul>
 
         </div>
@@ -248,7 +270,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             </ul>
           </div>
         </div>
-        
+
         <div class="col-md-3 mb-5">
           <h3 class="mb-4">Quick Links</h3>
           <ul class="list-unstyled footer-link">
@@ -263,6 +285,11 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
       </div>
       <div class="row">
+        <div class="col-12 text-md-center text-left">
+          <p class="copyright"><small>&copy;
+              <script>document.write(new Date().getFullYear());</script> Mahmoud Shaban. All Rights Reserved.
+            </small></p>
+        </div>
       </div>
     </div>
   </footer>
@@ -285,6 +312,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/modern-interactions.js"></script>
 </body>
 
 </html>

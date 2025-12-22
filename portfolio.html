@@ -1,4 +1,3 @@
-
 <!-- 
 ////////////////////////////////////////////////////////////////
 
@@ -29,7 +28,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
   <link rel="shortcut icon" href="ftco-32x32.png">
 
-  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/lang-switch.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -44,7 +44,14 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
   <!-- Theme Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-modern.css">
 
 </head>
 
@@ -53,14 +60,24 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <header role="banner">
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">Mahmoud Shaban </a>
+        <a class="navbar-brand logo-modern" href="index.html">
+          <div class="logo-box">
+            <span class="logo-title">Mahmoud Shaban</span>
+            <div class="logo-line-box">
+              <span class="logo-line-del"></span>
+              <span class="logo-diamond">♦</span>
+              <span class="logo-line-del"></span>
+            </div>
+            <span class="logo-subtitle">Backend Developer</span>
+          </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-   
+
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav pl-md-5 ml-auto">
             <li class="nav-item">
@@ -86,14 +103,13 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
         </div>
       </div>
-                <!-- Sprachumschalter Dropdown -->
-          <div class="dropdown lang-switch">
-            <button class="dropbtn">Language</button>
-            <div class="dropdown-content">
-              <a href="portfolio.html">English (EN)</a>
-              <a href="portfolio-de.html">Deutsch (DE)</a>
-            </div>
-          </div>
+      <!-- Sprachumschalter Dropdown -->
+      <!-- New Modern Language Switcher -->
+      <div class="lang-toggle">
+        <a href="portfolio.html" class="lang-link active">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="portfolio-de.html" class="lang-link">DE</a>
+      </div>
     </nav>
   </header>
   <!-- END header -->
@@ -104,99 +120,151 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-right" data-aos-delay="">My Projects</h1>
-          <p class="custom-breadcrumbs" data-aos="fade-right" data-aos-delay="100"><a href="index.html">Home</a> <span class="mx-3">/</span> Projects</p>
+          <p class="custom-breadcrumbs" data-aos="fade-right" data-aos-delay="100"><a href="index.html">Home</a> <span
+              class="mx-3">/</span> Projects</p>
         </div>
       </div>
     </div>
   </div>
 
-  
+
   <div class="section portfolio-section">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-8 text-center">
-          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Awesome Work</h2>
-          <p data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus perferendis
-            libero accusantium nisi.</p>
-          <p><a href="#">View All Portfolio</a></p>
+          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Selected Projects</h2>
+          <p data-aos="fade-right" data-aos-delay="100">A showcase of my recent development work, from robust backend
+            systems to modern AI-powered applications. Each project demonstrates my commitment to clean code and
+            efficient problem-solving.</p>
+          <p><a href="portfolio.html" class="active">View All Portfolio</a></p>
         </div>
       </div>
     </div>
 
-  <div class="container-fluid">
-      <div class="row mb-5 no-gutters">
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-          <a href="project-1.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Web IDE</h2>
-              <p>For softwaretester</p>
-            </div>
-            <img src="images/project-1-images/project-1.JPG" alt="Image" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+    <div class="container-fluid">
+      <div class="projects-grid">
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-2.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Analyzing Python Code Structures </h2>
-              <p>via XML</p>
+        <!-- Project 1 -->
+        <a href="project-1.html" class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/project-1-images/project-1.JPG" alt="Web IDE" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Web IDE</h3>
+            <p>For Software Testers</p>
+            <div class="project-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">ACE Editor</span>
             </div>
-            <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Image" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-          <a href="project-3.html" class="work-thumb">
-            <div class="work-text">
-              <h2>User Management Application</h2>
-              <p>(CRUD)</p>
+        <!-- Project 2 -->
+        <a href="project-2.html" class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Python Analyzer" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Code Analyzer</h3>
+            <p>Python to XML Structure</p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XML Parsing</span>
+              <span class="tech-tag">Algorithmic</span>
             </div>
-            <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="Image" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-4.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Product Catalog App</h2>
-              <p>Arabic</p>
+        <!-- Project 3 -->
+        <a href="project-3.html" class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="User Management"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">User Management</h3>
+            <p>CRUD Application</p>
+            <div class="project-tags">
+              <span class="tech-tag">Fullstack</span>
+              <span class="tech-tag">CRUD</span>
+              <span class="tech-tag">Database</span>
             </div>
-            <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Image" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-5.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Blog Web App</h2>
-              <p>Blog-Blattform</p>
+        <!-- Project 4 -->
+        <a href="project-4.html" class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Store App"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Product Catalog</h3>
+            <p>Arabic Store App</p>
+            <div class="project-tags">
+              <span class="tech-tag">E-Commerce</span>
+              <span class="tech-tag">Localization</span>
             </div>
-            <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Image" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        
+        <!-- Project 5 -->
+        <a href="project-5.html" class="project-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Blog App"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Blog Platform</h3>
+            <p>Content Management</p>
+            <div class="project-tags">
+              <span class="tech-tag">CMS</span>
+              <span class="tech-tag">Blogging</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="project-6.html" class="project-card" data-aos="fade-up" data-aos-delay="600">
+          <img src="images/project-6-images/demo1.gif" alt="Google Review Analyzer" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Google Review Analyzer</h3>
+            <p>AI-Powered Review Analysis</p>
+            <div class="project-tags">
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 7 -->
+        <a href="project-7-en.html" class="project-card" data-aos="fade-up" data-aos-delay="700">
+          <img src="images/project-7-images/screen1.png" alt="Lab Result AI" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Lab Result AI</h3>
+            <p>AI-Powered Medical Lab Analysis</p>
+            <div class="project-tags">
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Healthcare</span>
+              <span class="tech-tag">Spring Boot</span>
+            </div>
+          </div>
+        </a>
 
       </div>
-      
+
       <div class="row mt-5">
         <div class="col-12 text-center">
-          <p data-aos="fade-up" data-aos-delay=""><a href="portfolio.html" class="btn btn-outline-white px-4 py-3">More Portfolio</a></p>
+          <p data-aos="fade-up" data-aos-delay=""><a href="portfolio.html" class="btn btn-outline-white px-4 py-3">More
+              Portfolio</a></p>
         </div>
       </div>
     </div>
   </div>
-  
 
 
-   <div class="bg-primary py-5">
+
+  <div class="bg-primary py-5">
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-lg-7">
-          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Looking for a backend developer?
+          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Looking for a backend
+            developer?
           </h3>
-          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">I’d love to hear from you and see how we can work together.</p>
+          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">I’d love to hear from you and see how we
+            can work together.</p>
 
           <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact.html"
               class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
@@ -215,11 +283,14 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             Clean code. Continuous improvement. Real results.</p>
           <ul class="list-unstyled footer-link d-flex footer-social">
             <ul class="list-unstyled footer-link d-flex footer-social">
-      
-            <li><a href="https://facebook.com/profile.php?id=100037561622113"  class="p-2"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a></li>
-          </ul>
+
+              <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span
+                    class="fa fa-facebook"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span
+                    class="fa fa-linkedin"></span></a></li>
+              <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a>
+              </li>
+            </ul>
           </ul>
 
         </div>
@@ -253,6 +324,11 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
       </div>
       <div class="row">
+        <div class="col-12 text-md-center text-left">
+          <p class="copyright"><small>&copy;
+              <script>document.write(new Date().getFullYear());</script> Mahmoud Shaban. All Rights Reserved.
+            </small></p>
+        </div>
       </div>
     </div>
   </footer>
@@ -262,7 +338,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#ffc107" /></svg></div>
+        stroke="#ffc107" />
+    </svg></div>
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -273,7 +350,15 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/bg-animation.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/modern-interactions.js"></script>
+  <script src="js/projects-manager.js"></script>
+  <script>
+    $(document).ready(function () {
+      renderCustomProjects('.projects-grid', 'en');
+    });
+  </script>
 </body>
 
 </html>

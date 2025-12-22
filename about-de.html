@@ -27,6 +27,7 @@
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-modern.css">
 </head>
 
 <body>
@@ -34,7 +35,17 @@
   <header role="banner">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index-de.html">Mahmoud Shaban</a>
+        <a class="navbar-brand logo-modern" href="index-de.html">
+          <div class="logo-box">
+            <span class="logo-title">Mahmoud Shaban</span>
+            <div class="logo-line-box">
+              <span class="logo-line-del"></span>
+              <span class="logo-diamond">♦</span>
+              <span class="logo-line-del"></span>
+            </div>
+            <span class="logo-subtitle">Backend Developer</span>
+          </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Navigation umschalten">
@@ -58,10 +69,10 @@
 
           </ul>
 
-       
 
 
-     
+
+
 
           <div class="navbar-nav ml-auto">
             <form method="post" class="search-form">
@@ -75,14 +86,13 @@
 
       </div>
 
-                 <!-- Sprachumschalter Dropdown -->
-          <div class="dropdown lang-switch">
-            <button class="dropbtn">Sprache</button>
-            <div class="dropdown-content">
-              <a href="about.html">English (EN)</a>
-              <a href="about-de.html">Deutsch (DE)</a>
-            </div>
-          </div>
+      <!-- Sprachumschalter Dropdown -->
+      <!-- Neues Modernes Sprachmenü -->
+      <div class="lang-toggle">
+        <a href="about.html" class="lang-link">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="about-de.html" class="lang-link active">DE</a>
+      </div>
 
 
     </nav>

@@ -32,7 +32,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
   <!-- Theme Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-modern.css">
 
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
@@ -43,8 +50,16 @@
   <header role="banner">
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          Mahmoud Shaban
+        <a class="navbar-brand logo-modern" href="index.html">
+          <div class="logo-box">
+            <span class="logo-title">Mahmoud Shaban</span>
+            <div class="logo-line-box">
+              <span class="logo-line-del"></span>
+              <span class="logo-diamond">♦</span>
+              <span class="logo-line-del"></span>
+            </div>
+            <span class="logo-subtitle">Backend Developer</span>
+          </div>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
@@ -90,27 +105,26 @@
         </div>
       </div>
 
-               <!-- Sprachumschalter Dropdown -->
-          <div class="dropdown lang-switch">
-            <button class="dropbtn">Language</button>
-            <div class="dropdown-content">
-              <a href="index.html">English (EN)</a>
-              <a href="index-de.html">Deutsch (DE)</a>
-            </div>
-          </div>
+      <!-- New Modern Language Switcher -->
+      <div class="lang-toggle">
+        <a href="index.html" class="lang-link active">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="index-de.html" class="lang-link">DE</a>
+      </div>
 
     </nav>
   </header>
   <!-- END header -->
 
-  <div class="slider-item overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('images/bg-site.jpg');">
-    <div class="container">
-      <div class="row slider-text align-items-center justify-content-center">
-        <div class="col-lg-12 text-center col-sm-12">
-          <p data-aos="fade-up" data-aos="fade-up" data-aos-delay="">Backend Developer | Java & Spring Boot | REST APIs
-            & Scalable Systems </p>
-          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">Ready for Any Challenge</h1>
+  <div class="hero-section" data-stellar-background-ratio="0.5">
+    <div class="container hero-content">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="hero-title mb-4" data-aos="fade-up">Ready for Any Challenge</h1>
+          <div class="typewriter-container mb-4" data-aos="fade-up" data-aos-delay="100">
+            <span id="typewriter" class="typewriter-text"></span><span class="cursor"></span>
+          </div>
+
           <div class="btn-play-wrap mx-auto" data-aos="fade-up" data-aos-delay="200">
             <a href="https://youtu.be/mV6GZVz-jlM?si=STnfGT3hO5rJ7aKr" data-fancybox data-ratio="2"
               class="btn-play"><span class="ion ion-ios-play"></span></a>
@@ -133,66 +147,113 @@
           <p>Some of my recent projects — built with passion, curiosity, and way too much coffee. I love experimenting
             with code and turning ideas into working software.
           </p>
-          <p><a href="#">View All Portfolio</a></p>
+          <p><a href="portfolio.html">View All Portfolio</a></p>
         </div>
       </div>
     </div>
     <div class="container-fluid">
-      <div class="row mb-5 no-gutters">
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-1.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Web IDE </h2>
-              <p>for Softwaretester</p>
-            </div>
-            <img src="images/project-1-images/project-1.JPG" alt="Image" style="height: 470px; width: auto;"
-              class="img-fluid">
-          </a>
-        </div>
+      <div class="container-fluid">
+        <div class="projects-grid">
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="200">
-          <a href="project-2.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Analyzing Python Code Structures</h2>
-              <p>via XML</p>
+          <!-- Project 1 -->
+          <a href="project-1.html" class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/project-1-images/project-1.JPG" alt="Web IDE" class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Web IDE</h3>
+              <p>For Software Testers</p>
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">ACE Editor</span>
+              </div>
             </div>
-            <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Image" style="height: 470px; width: auto;"
-              class="img-fluid">
           </a>
-        </div>
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="300">
-          <a href="project-3.html" class="work-thumb">
-            <div class="work-text">
-              <h2>User Management Application</h2>
-              <p>(CRUD)</p>
+          <!-- Project 2 -->
+          <a href="project-2.html" class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Python Analyzer" class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Code Analyzer</h3>
+              <p>Python to XML Structure</p>
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">XML Parsing</span>
+                <span class="tech-tag">Algorithmic</span>
+              </div>
             </div>
-            <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="Image"
-              style="height: 470px; width: auto;" class="img-fluid">
           </a>
-        </div>
 
-
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="300">
-          <a href="project-4.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Product Catalog App</h2>
-              <p>Arabic</p>
+          <!-- Project 3 -->
+          <a href="project-3.html" class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="User Management"
+              class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">User Management</h3>
+              <p>CRUD Application</p>
+              <div class="project-tags">
+                <span class="tech-tag">Fullstack</span>
+                <span class="tech-tag">CRUD</span>
+                <span class="tech-tag">Database</span>
+              </div>
             </div>
-            <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Image"
-              style="height: 470px; width: auto;" class="img-fluid">
           </a>
-        </div>
 
-           <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="300">
-          <a href="project-5.html" class="work-thumb">
-            <div class="work-text">
-                <h2>Blog Web App</h2>
-              <p>Blog-Blattform</p>
+          <!-- Project 4 -->
+          <a href="project-4.html" class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Store App"
+              class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Product Catalog</h3>
+              <p>Arabic Store App</p>
+              <div class="project-tags">
+                <span class="tech-tag">E-Commerce</span>
+                <span class="tech-tag">Localization</span>
+              </div>
             </div>
-            <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Image"
-              style="height: 470px; width: auto;" class="img-fluid">
           </a>
+
+          <!-- Project 5 -->
+          <a href="project-5.html" class="project-card" data-aos="fade-up" data-aos-delay="500">
+            <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Blog App"
+              class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Blog Platform</h3>
+              <p>Content Management</p>
+              <div class="project-tags">
+                <span class="tech-tag">CMS</span>
+                <span class="tech-tag">Blogging</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6 -->
+          <a href="project-6.html" class="project-card" data-aos="fade-up" data-aos-delay="600">
+            <img src="images/project-6-images/demo1.gif" alt="Google Review Analyzer" class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Google Review Analyzer</h3>
+              <p>AI-Powered Review Analysis</p>
+              <div class="project-tags">
+                <span class="tech-tag">AI/ML</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">React</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 7 -->
+          <a href="project-7-en.html" class="project-card" data-aos="fade-up" data-aos-delay="700">
+            <img src="images/project-7-images/screen1.png" alt="Lab Result AI" class="project-img">
+            <div class="project-overlay">
+              <h3 class="project-title">Lab Result AI</h3>
+              <p>AI-Powered Medical Lab Analysis</p>
+              <div class="project-tags">
+                <span class="tech-tag">AI/ML</span>
+                <span class="tech-tag">Healthcare</span>
+                <span class="tech-tag">Spring Boot</span>
+              </div>
+            </div>
+          </a>
+
         </div>
 
         <div class="row mt-5">
@@ -203,7 +264,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="padding-bottom: 0;">
       <div class="container">
         <div class="row">
 
@@ -248,274 +309,244 @@
         </div>
       </div>
     </div>
-    >
+
   </div>
 
-  <div class="section">
+  <div class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center mb-5 text-center">
+        <div class="col-md-8">
+          <h2 class="mb-4 section-title" data-aos="fade-up">My Skills</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Here are some of the core technologies and tools I work with to build reliable, scalable, and efficient
+            backend systems.
+          </p>
+        </div>
+      </div>
 
-        <div class="row text-center justify-content-center mb-5">
-          <div class="col-md-7">
-            <h2 class="mb-4 section-title" data-aos="fade-up" data-aos-delay="">My Skills</h2>
-            <p data-aos="fade-up" data-aos-delay="100">
-              Here are some of the core technologies and tools I work with to build reliable, scalable, and efficient
-              backend systems.
-            </p>
+      <div class="skills-wrapper" data-aos="fade-up">
+        <div class="skills-track">
+
+          <!-- ORIGINAL SET -->
+          <div class="skill-item"><i class="devicon-java-plain colored skill-icon"></i><span
+              class="skill-name">Java</span></div>
+          <div class="skill-item"><i class="devicon-spring-plain colored skill-icon"></i><span class="skill-name">Spring
+              Boot</span></div>
+          <div class="skill-item"><i class="devicon-hibernate-plain colored skill-icon"></i><span
+              class="skill-name">Hibernate</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored skill-icon"></i><span
+              class="skill-name">MySQL</span></div>
+          <div class="skill-item"><i class="devicon-postgresql-plain colored skill-icon"></i><span
+              class="skill-name">PostgreSQL</span></div>
+          <div class="skill-item"><i class="devicon-git-plain colored skill-icon"></i><span
+              class="skill-name">Git</span></div>
+          <div class="skill-item"><i class="devicon-docker-plain colored skill-icon"></i><span
+              class="skill-name">Docker</span></div>
+          <div class="skill-item"><i class="devicon-gradle-plain colored skill-icon"></i><span
+              class="skill-name">Gradle</span></div>
+
+          <!-- DUPLICATE SET FOR INFINITE SCROLL -->
+          <div class="skill-item"><i class="devicon-java-plain colored skill-icon"></i><span
+              class="skill-name">Java</span></div>
+          <div class="skill-item"><i class="devicon-spring-plain colored skill-icon"></i><span class="skill-name">Spring
+              Boot</span></div>
+          <div class="skill-item"><i class="devicon-hibernate-plain colored skill-icon"></i><span
+              class="skill-name">Hibernate</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored skill-icon"></i><span
+              class="skill-name">MySQL</span></div>
+          <div class="skill-item"><i class="devicon-postgresql-plain colored skill-icon"></i><span
+              class="skill-name">PostgreSQL</span></div>
+          <div class="skill-item"><i class="devicon-git-plain colored skill-icon"></i><span
+              class="skill-name">Git</span></div>
+          <div class="skill-item"><i class="devicon-docker-plain colored skill-icon"></i><span
+              class="skill-name">Docker</span></div>
+          <div class="skill-item"><i class="devicon-gradle-plain colored skill-icon"></i><span
+              class="skill-name">Gradle</span></div>
+
+        </div>
+      </div>
+
+
+
+      <div class="section block-11"
+        style="background: #020617 !important; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding: 8rem 0; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+              <h2 class="mb-4 section-title">A Bit About Me</h2>
+            </div>
+          </div>
+          <div class="nonloop-block-11 owl-carousel">
+            <div class="item">
+              <div class="block-33 h-100">
+                <div class="text">
+                  <blockquote>
+                    <p>&rdquo; I’m a passionate backend developer who enjoys solving real-world problems with clean,
+                      scalable code.
+                      &ldquo;</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-33 h-100">
+
+                <div class="text">
+                  <blockquote>
+                    <p>&rdquo; I take pride in writing well-structured Java and Spring Boot applications, and I’m
+                      constantly
+                      learning new technologies to improve my skills.
+                      &ldquo;</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-33 h-100">
+                <div class="text">
+                  <blockquote>
+                    <p>&rdquo; I work well independently, communicate clearly, and enjoy turning complex requirements
+                      into
+                      elegant technical solutions.
+                      &ldquo;</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-33 h-100">
+                <div class="text">
+                  <blockquote>
+                    <p>&rdquo; Whether it's building APIs, optimizing performance, or collaborating with designers and
+                      developers, I give every task my full attention and energy. &ldquo;</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+        <!-- END .block-4 -->
+      </div>
 
-        <!-- Spring Boot -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-spring-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Spring Boot</h3>
-            <p>A fast, flexible Java framework for building microservices and RESTful APIs.</p>
+      <!-- Modern Minimalist CTA -->
+      <div class="section" style="padding: 8rem 0; position: relative; z-index: 10;">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <h2 class="mb-4" data-aos="fade-up"
+                style="font-size: 3rem; font-weight: 800; letter-spacing: -1px; background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Ready to scale your backend?
+              </h2>
+              <p class="mb-5" data-aos="fade-up" data-aos-delay="100"
+                style="font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin: 0 auto;">
+                I specialize in building robust, high-performance Java applications. Let's discuss how I can help your
+                team succeed.
+              </p>
+
+              <div data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="btn-glow">
+                  Start a Conversation
+                  <span class="icon-arrow-right ml-2"></span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Java -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up" data-aos-delay="100">
-            <i class="devicon-java-plain-wordmark"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Java</h3>
-            <p>A robust, object-oriented language used to build scalable and reliable backends.</p>
-          </div>
-        </div>
-
-        <!-- Git & GitHub -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up" data-aos-delay="200">
-            <i class="devicon-github-original colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Git & GitHub</h3>
-            <p>Tools for version control and collaboration using branches and pull requests.</p>
-          </div>
-        </div>
-
-        <!-- Docker -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up" data-aos-delay="300">
-            <i class="devicon-docker-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Docker</h3>
-            <p>Containerization for consistent deployments across different environments.</p>
-          </div>
-        </div>
-
-        <!-- PostgreSQL -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-postgresql-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>PostgreSQL</h3>
-            <p>A powerful open-source relational database system for structured data.</p>
-          </div>
-        </div>
-
-        <!-- MySQL -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-mysql-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>MySQL</h3>
-            <p>A fast, reliable SQL database engine widely used in web applications.</p>
-          </div>
-        </div>
-
-        <!-- Maven -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-apache-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Maven</h3>
-            <p>A build tool that automates dependencies, packaging, and lifecycle management.</p>
-          </div>
-        </div>
-
-        <!-- Gradle -->
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-gradle-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>Gradle</h3>
-            <p>A flexible and fast build automation tool for Java-based applications.</p>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-3 mb-4">
-          <div class="service text-center" data-aos="fade-up">
-            <i class="devicon-java-plain colored"
-              style="font-size: 80px; display: block; margin: 0 auto 15px auto;"></i>
-            <h3>JavaFX</h3>
-            <p>A framework for building modern, cross-platform desktop UIs in Java—great for admin tools and backend
-              dashboards.</p>
-          </div>
-        </div>
-
-
       </div>
     </div>
-  </div>
 
 
-  <div class="section bg-light block-11">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8 text-center">
-          <h2 class="mb-4 section-title">A Bit About Me</h2>
-        </div>
-      </div>
-      <div class="nonloop-block-11 owl-carousel">
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; I’m a passionate backend developer who enjoys solving real-world problems with clean,
-                  scalable code.
-                  &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="block-33 h-100">
-
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; I take pride in writing well-structured Java and Spring Boot applications, and I’m constantly
-                  learning new technologies to improve my skills.
-                  &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; I work well independently, communicate clearly, and enjoy turning complex requirements into
-                  elegant technical solutions.
-                  &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; Whether it's building APIs, optimizing performance, or collaborating with designers and
-                  developers, I give every task my full attention and energy. &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- END .block-4 -->
-  </div>
-
-  <div class="bg-primary py-5">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Looking for a backend
-            developer?
-          </h3>
-          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">I’d love to hear from you and see how we
-            can work together.</p>
-
-          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact.html"
-              class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-4 mb-5">
-          <h3 class="mb-4">About Craft</h3>
-          <p class="mb-5">Backend development with a focus on Java, Spring Boot, and scalable APIs.
-            Clean code. Continuous improvement. Real results.</p>
-          <ul class="list-unstyled footer-link d-flex footer-social">
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+            <h3 class="mb-4">About Craft</h3>
+            <p class="mb-5">Backend development with a focus on Java, Spring Boot, and scalable APIs.
+              Clean code. Continuous improvement. Real results.</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
+              <ul class="list-unstyled footer-link d-flex footer-social">
 
-              <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span
-                    class="fa fa-facebook"></span></a></li>
-              <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span
-                    class="fa fa-linkedin"></span></a></li>
-              <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a>
-              </li>
+                <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span
+                      class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span
+                      class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span
+                      class="fa fa-instagram"></span></a>
+                </li>
+              </ul>
             </ul>
-          </ul>
 
-        </div>
-        <div class="col-md-5 mb-5 pl-md-5">
-          <div class="mb-5">
-            <h3 class="mb-4">Contact Info</h3>
-            <ul class="list-unstyled footer-link quick-contact">
-              <li class="d-block">
-                <span class="d-block caption">Address:</span>
-                <span class="caption-text">Remote / Germany</span>
-              </li>
-              <li class="d-block">
-                <span class="d-block caption">Email:</span><span class="caption-text">mahmoudsh4work@gmail.com</span>
-              </li>
+          </div>
+          <div class="col-md-5 mb-5 pl-md-5">
+            <div class="mb-5">
+              <h3 class="mb-4">Contact Info</h3>
+              <ul class="list-unstyled footer-link quick-contact">
+                <li class="d-block">
+                  <span class="d-block caption">Address:</span>
+                  <span class="caption-text">Remote / Germany</span>
+                </li>
+                <li class="d-block">
+                  <span class="d-block caption">Email:</span><span class="caption-text">mahmoudsh4work@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3 class="mb-4">Quick Links</h3>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Disclaimers</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
+          <div class="col-md-3">
 
-
+          </div>
         </div>
-        <div class="col-md-3 mb-5">
-          <h3 class="mb-4">Quick Links</h3>
-          <ul class="list-unstyled footer-link">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Disclaimers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-
+        <div class="row">
+          <div class="col-12 text-md-center text-left">
+            <p class="copyright"><small>&copy;
+                <script>document.write(new Date().getFullYear());</script> Mahmoud Shaban. All Rights Reserved.
+              </small></p>
+          </div>
         </div>
       </div>
-      <div class="row">
-      </div>
-    </div>
-  </footer>
-  <!-- END footer -->
+    </footer>
+    <!-- END footer -->
 
-  <!-- loader -->
-  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#ffc107" />
-    </svg></div>
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#ffc107" />
+      </svg></div>
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
- 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/bg-animation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modern-interactions.js"></script>
+    <script src="js/projects-manager.js"></script>
+    <script>
+      $(document).ready(function () {
+        renderCustomProjects('.projects-grid', 'en');
+      });
+    </script>
+
 </body>
 
 </html>

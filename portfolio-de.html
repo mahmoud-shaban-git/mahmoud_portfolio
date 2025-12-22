@@ -28,7 +28,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
   <link rel="shortcut icon" href="ftco-32x32.png">
 
-  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/lang-switch.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -43,6 +44,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-modern.css">
 
 </head>
 
@@ -51,7 +53,17 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <header role="banner">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index-de.html">Mahmoud Shaban</a>
+        <a class="navbar-brand logo-modern" href="index-de.html">
+          <div class="logo-box">
+            <span class="logo-title">Mahmoud Shaban</span>
+            <div class="logo-line-box">
+              <span class="logo-line-del"></span>
+              <span class="logo-diamond">♦</span>
+              <span class="logo-line-del"></span>
+            </div>
+            <span class="logo-subtitle">Backend Developer</span>
+          </div>
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Menü umschalten">
@@ -83,25 +95,26 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
       </div>
 
-              <!-- Sprachumschalter Dropdown -->
-          <div class="dropdown lang-switch">
-            <button class="dropbtn">Sprache</button>
-            <div class="dropdown-content">
-              <a href="portfolio.html">English (EN)</a>
-              <a href="portfolio-de.html">Deutsch (DE)</a>
-            </div>
-          </div>
+      <!-- Sprachumschalter Dropdown -->
+      <!-- Neues Modernes Sprachmenü -->
+      <div class="lang-toggle">
+        <a href="portfolio.html" class="lang-link">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="portfolio-de.html" class="lang-link active">DE</a>
+      </div>
     </nav>
   </header>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('images/my-projects.jpg');">
+    style="background-image: url('images/bg-site.jpg');">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
-          <h1 class="mb-4" data-aos="fade-right" data-aos-delay="">Meine Projekte</h1>
-          <p class="custom-breadcrumbs" data-aos="fade-right" data-aos-delay="100"><a href="index-de.html">Startseite</a> <span class="mx-3">/</span> Projekte</p>
+          <h1 class="mb-4" data-aos="fade-up">Projekte & Arbeiten</h1>
+          <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index-de.html">Startseite</a>
+            <span class="mx-3">/</span> Portfolio
+          </p>
         </div>
       </div>
     </div>
@@ -111,71 +124,122 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-8 text-center">
-          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Ausgewählte Arbeiten</h2>
-          <p data-aos="fade-right" data-aos-delay="100">
-            Hier finden Sie einige meiner spannendsten Projekte – umgesetzt mit Leidenschaft, Präzision und Liebe zum Detail.
-          </p>
-          <p><a href="#">Alle Projekte ansehen</a></p>
+          <h2 class="mb-4 section-title" data-aos="fade-up">Ausgewählte Projekte</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Eine Übersicht meiner aktuellen Entwicklungsarbeiten, von stabilen
+            Backend-Systemen bis hin zu modernen KI-gestützten Anwendungen. Jedes Projekt zeigt meinen Fokus auf
+            sauberen Code und effiziente Problemlösungen.</p>
+          <p><a href="portfolio-de.html" class="active">Gesamtes Portfolio ansehen</a></p>
         </div>
       </div>
     </div>
-
     <div class="container-fluid">
-      <div class="row mb-5 no-gutters">
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-          <a href="project-1-de.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Web IDE</h2>
-              <p>für Softwaretester</p>
-            </div>
-            <img src="images/project-1-images/project-1.JPG" alt="Bild" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+      <div class="projects-grid">
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-2-de.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Analyse von Python-Code-Strukturen</h2>
-              <p>über XML</p>
+        <!-- Projekt 1 -->
+        <a href="project-1-de.html" class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/project-1-images/project-1.JPG" alt="Web IDE" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Web IDE</h3>
+            <p>Für Softwaretester</p>
+            <div class="project-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">ACE Editor</span>
             </div>
-            <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Bild" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-          <a href="project-3-de.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Benutzerverwaltungsanwendung</h2>
-              <p>(CRUD)</p>
+        <!-- Projekt 2 -->
+        <a href="project-2-de.html" class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/project-2-images/py-to-xml-notext.JPG" alt="Python Analyzer" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Code Analyzer</h3>
+            <p>Python zu XML Struktur</p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XML Parsing</span>
+              <span class="tech-tag">Algorithmik</span>
             </div>
-            <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="Bild" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-          <a href="project-4-de.html" class="work-thumb">
-            <div class="work-text">
-              <h2>Produktkatalog-App</h2>
-              <p>Arabisch</p>
+        <!-- Projekt 3 -->
+        <a href="project-3-de.html" class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/project-3-images/crud_Demo-ezgif.com-video-to-gif-converter.gif" alt="Benutzerverwaltung"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">User Management</h3>
+            <p>CRUD Anwendung</p>
+            <div class="project-tags">
+              <span class="tech-tag">Fullstack</span>
+              <span class="tech-tag">CRUD</span>
+              <span class="tech-tag">Datenbank</span>
             </div>
-            <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Bild" style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-        </div>
+          </div>
+        </a>
+
+        <!-- Projekt 4 -->
+        <a href="project-4-de.html" class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="images/project-4-images/StoreApp-Demo-ezgif.com-video-to-gif-converter.gif" alt="Store App"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Produktkatalog</h3>
+            <p>Arabische Shop-App</p>
+            <div class="project-tags">
+              <span class="tech-tag">E-Commerce</span>
+              <span class="tech-tag">Lokalisierung</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Projekt 5 -->
+        <a href="project-5-de.html" class="project-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Blog App"
+            class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Blog-Plattform</h3>
+            <p>Content Management</p>
+            <div class="project-tags">
+              <span class="tech-tag">CMS</span>
+              <span class="tech-tag">Blogging</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Projekt 6 -->
+        <a href="project-6.html" class="project-card" data-aos="fade-up" data-aos-delay="600">
+          <img src="images/project-6-images/demo1.gif" alt="Google Review Analyzer" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Google Review Analyzer</h3>
+            <p>KI-gestützte Analyse</p>
+            <div class="project-tags">
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Projekt 7 -->
+        <a href="project-7.html" class="project-card" data-aos="fade-up" data-aos-delay="700">
+          <img src="images/project-7-images/screen1.png" alt="Lab Result AI" class="project-img">
+          <div class="project-overlay">
+            <h3 class="project-title">Lab Result AI</h3>
+            <p>KI-gestützte Laborwert-Analyse</p>
+            <div class="project-tags">
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Medizin</span>
+              <span class="tech-tag">Spring Boot</span>
+            </div>
+          </div>
+        </a>
+
       </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="300">
-          <a href="project-5.html" class="work-thumb">
-            <div class="work-text">
-                <h2>Blog Web App</h2>
-              <p>Blog-Blattform</p>
-            </div>
-            <img src="images/project-5-images/Login-Blog-App-ezgif.com-video-to-gif-converter.gif" alt="Image"
-              style="height: 470px; width: auto;" class="img-fluid">
-          </a>
-      
       <div class="row mt-5">
         <div class="col-12 text-center">
-          <p data-aos="fade-up" data-aos-delay=""><a href="portfolio-de.html" class="btn btn-outline-white px-4 py-3">Mehr Projekte</a></p>
+          <p data-aos="fade-up" data-aos-delay=""><a href="portfolio-de.html"
+              class="btn btn-outline-white px-4 py-3">Mehr Portfolio</a></p>
         </div>
       </div>
     </div>
@@ -185,9 +249,12 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-lg-7">
-          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Suchen Sie einen Backend-Entwickler?</h3>
-          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">Ich freue mich, von Ihnen zu hören und zu sehen, wie wir zusammenarbeiten können.</p>
-          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact-de.html" class="btn btn-outline-white px-4 py-3">Kontakt aufnehmen</a></p>
+          <h3 class="text-white mb-2 font-weight-normal" data-aos="fade-right" data-aos-delay="">Suchen Sie einen
+            Backend-Entwickler?</h3>
+          <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">Ich freue mich, von Ihnen zu hören und
+            zu sehen, wie wir zusammenarbeiten können.</p>
+          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact-de.html"
+              class="btn btn-outline-white px-4 py-3">Kontakt aufnehmen</a></p>
         </div>
       </div>
     </div>
@@ -198,11 +265,15 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
       <div class="row mb-5">
         <div class="col-md-4 mb-5">
           <h3 class="mb-4">Über Craft</h3>
-          <p class="mb-5">Backend-Entwicklung mit Fokus auf Java, Spring Boot und skalierbare APIs. Sauberer Code. Ständige Verbesserung. Messbare Ergebnisse.</p>
+          <p class="mb-5">Backend-Entwicklung mit Fokus auf Java, Spring Boot und skalierbare APIs. Sauberer Code.
+            Ständige Verbesserung. Messbare Ergebnisse.</p>
           <ul class="list-unstyled footer-link d-flex footer-social">
-            <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            <li><a href="https://facebook.com/profile.php?id=100037561622113" class="p-2"><span
+                  class="fa fa-facebook"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/mahmoud-shaban-722b42257/" class="p-2"><span
+                  class="fa fa-linkedin"></span></a></li>
+            <li><a href="https://instagram.com/mahmoudshaban11" class="p-2"><span class="fa fa-instagram"></span></a>
+            </li>
           </ul>
         </div>
 
@@ -233,13 +304,22 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 text-md-center text-left">
+        <p class="copyright"><small>&copy;
+            <script>document.write(new Date().getFullYear());</script> Mahmoud Shaban. All Rights Reserved.
+          </small></p>
+      </div>
+    </div>
+    </div>
   </footer>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen">
     <svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ffc107" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#ffc107" />
     </svg>
   </div>
 
@@ -253,5 +333,12 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/projects-manager.js"></script>
+  <script>
+    $(document).ready(function () {
+      renderCustomProjects('.projects-grid', 'de');
+    });
+  </script>
 </body>
+
 </html>
